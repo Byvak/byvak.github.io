@@ -17,11 +17,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             whoAmI(),
-            Container(
+            const SizedBox(
               width: 200,
               child: Text("data"),
             ),
-            Container(
+            const SizedBox(
+              width: 300,
               child: Text("data"),
             ),
           ],
