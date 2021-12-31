@@ -1,5 +1,5 @@
-import 'package:byvak/pages/home.dart';
 import 'package:byvak/utils/constants.dart';
+import 'package:byvak/utils/layout_controller.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,20 +25,32 @@ class MyApp extends StatelessWidget {
           button: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-      home: const MyHomePage(),
+      home: const LayoutController(),
     );
   }
 
   Route _routes(RouteSettings settings) {
     final routeName = settings.name;
     switch (routeName) {
-      case "/aboutMeScreen":
+      case "/homeTablet":
+        return MaterialPageRoute(builder: (context) {
+          return Container();
+        });
+      case "/homeLaptop":
+        return MaterialPageRoute(builder: (context) {
+          return Container();
+        });
+      case "/homeDesktop":
+        return MaterialPageRoute(builder: (context) {
+          return Container();
+        });
+      case "/homeMobile":
         return MaterialPageRoute(builder: (context) {
           return Container();
         });
       default:
         return MaterialPageRoute(builder: (context) {
-          return const MyHomePage();
+          return const LayoutController();
         });
     }
   }
