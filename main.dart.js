@@ -30943,6 +30943,7 @@ A.C_.prototype={}
 A.I8.prototype={
 ga8(a){return a.name}}
 A.q8.prototype={
+T(a,b){return new A.pV(B.jV,this.gNS(),"Burnny",A.a4d(null,"Poppins",B.vO,B.i,B.G1),!1,null)},
 NT(a){var s=null,r=t.z
 switch(a.a){case"/homeTablet":return A.pY(new A.Oe(),s,r)
 case"/homeLaptop":return A.pY(new A.Of(),s,r)
