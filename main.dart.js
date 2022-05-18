@@ -37315,7 +37315,7 @@ case 2:return A.Z(o,r)}})
 return A.a0($async$mw,r)}}
 A.VS.prototype={}
 A.oY.prototype={
-gjk(){return"assets/images/me.jpg"},
+gjk(){return"assets/images/me.jpeg"},
 T2(a){var s,r={},q=a.a
 if(q==null)q=$.Ic()
 r.a=r.b=null
@@ -37341,7 +37341,7 @@ if(q==null)return a.j(0,r)
 if(b<2||b>(r+q)/2)return a.j(0,q)
 else return a.j(0,r)},
 xS(a){var s,r,q,p
-if(a==="assets/images/me.jpg")return 1
+if(a==="assets/images/me.jpeg")return 1
 s=A.a0N(a)
 r=s.gjv().length>1?s.gjv()[s.gjv().length-2]:""
 q=$.a7o().nr(r)
