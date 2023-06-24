@@ -37697,7 +37697,7 @@ case 2:return A.a0(o,r)}})
 return A.a2($async$iG,r)}}
 A.T_.prototype={}
 A.na.prototype={
-gjp(){return"images/background.png"},
+gjp(){return"assets/images/background.png"},
 RN(a){var s,r={},q=a.a
 if(q==null)q=$.He()
 r.a=r.b=null
