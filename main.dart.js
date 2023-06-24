@@ -40581,7 +40581,7 @@ case 2:return A.U(o,r)}})
 return A.W($async$j3,r)}}
 A.VT.prototype={}
 A.o2.prototype={
-gjR(){return"/images/background.jpg"},
+gjR(){return"/images/background.png"},
 TM(a){var s,r={},q=a.a
 if(q==null)q=$.Jo()
 r.a=r.b=null
