@@ -3,44 +3,46 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"version.json": "f4659b91c4faa223eb38bb4a08b6f4ab",
-"index.html": "835c5245879a685d1039bb0351b9a38d",
-"/": "835c5245879a685d1039bb0351b9a38d",
-"main.dart.js": "c3c7a47fd769367c857c4d93e5da622c",
-"flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "dbf825b2378a70f73160d6597c248d51",
-"assets/AssetManifest.json": "d761a49d5f950839ce61183d6773a20b",
-"assets/NOTICES": "65927a9256022709295bd07d61a17fc5",
-"assets/FontManifest.json": "f564baede6b56839308824f15429c024",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
-"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
-"assets/AssetManifest.bin": "2ec2e5552817b1333fd765aea717b827",
-"assets/fonts/MaterialIcons-Regular.otf": "62ec8220af1fb03e1c20cfa38781e17e",
-"assets/assets/images/background.png": "a6675ef67448da38c2153f59594b1d30",
-"assets/assets/images/me.jpeg": "f59241a92171f4eb66b4ca79554dc958",
-"assets/assets/fonts/Poppins/Poppins-Medium.ttf": "ba95810b56f476990ca71d15139d5111",
-"assets/assets/fonts/Poppins/Poppins-Regular.ttf": "41e8dead03fb979ecc23b8dfb0fef627",
-"assets/assets/fonts/Poppins/Poppins-Bold.ttf": "c23534acbeddbaadfd0ab2d2bbfdfc84",
-"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
-"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
-"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
-"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
-"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
-"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a"};
+const RESOURCES = {
+  "version.json": "f4659b91c4faa223eb38bb4a08b6f4ab",
+  "index.html": "835c5245879a685d1039bb0351b9a38d",
+  "/": "835c5245879a685d1039bb0351b9a38d",
+  "main.dart.js": "c3c7a47fd769367c857c4d93e5da622c",
+  "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
+  "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+  "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+  "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+  "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+  "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+  "manifest.json": "dbf825b2378a70f73160d6597c248d51",
+  "assets/AssetManifest.json": "d761a49d5f950839ce61183d6773a20b",
+  "assets/NOTICES": "65927a9256022709295bd07d61a17fc5",
+  "assets/FontManifest.json": "f564baede6b56839308824f15429c024",
+  "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
+  "assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+  "assets/AssetManifest.bin": "2ec2e5552817b1333fd765aea717b827",
+  "assets/fonts/MaterialIcons-Regular.otf": "62ec8220af1fb03e1c20cfa38781e17e",
+  "assets/images/background.png": "a6675ef67448da38c2153f59594b1d30",
+  "assets/images/me.jpeg": "f59241a92171f4eb66b4ca79554dc958",
+  "assets/assets/fonts/Poppins/Poppins-Medium.ttf": "ba95810b56f476990ca71d15139d5111",
+  "assets/assets/fonts/Poppins/Poppins-Regular.ttf": "41e8dead03fb979ecc23b8dfb0fef627",
+  "assets/assets/fonts/Poppins/Poppins-Bold.ttf": "c23534acbeddbaadfd0ab2d2bbfdfc84",
+  "canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+  "canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+  "canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+  "canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
+  "canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+  "canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+  "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+  "canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+  "canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a"
+};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
-"index.html",
-"assets/AssetManifest.json",
-"assets/FontManifest.json"];
+  "index.html",
+  "assets/AssetManifest.json",
+  "assets/FontManifest.json"];
 
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
@@ -48,15 +50,15 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value, {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, { 'cache': 'reload' })));
     })
   );
 });
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
-self.addEventListener("activate", function(event) {
-  return event.waitUntil(async function() {
+self.addEventListener("activate", function (event) {
+  return event.waitUntil(async function () {
     try {
       var contentCache = await caches.open(CACHE_NAME);
       var tempCache = await caches.open(TEMP);
@@ -137,7 +139,7 @@ self.addEventListener("fetch", (event) => {
     return onlineFirst(event);
   }
   event.respondWith(caches.open(CACHE_NAME)
-    .then((cache) =>  {
+    .then((cache) => {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
         // lazily populate the cache only if the resource was successfully fetched.
